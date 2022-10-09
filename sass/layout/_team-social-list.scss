@@ -1,0 +1,11 @@
+.team-social-list {
+    margin-left: 32px;
+    margin-right: 32px;
+    padding-bottom: 18px;
+    justify-content: center;
+
+
+        &__link {
+            background-color: $brightColor;
+        }
+}

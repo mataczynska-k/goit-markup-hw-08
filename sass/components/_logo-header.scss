@@ -1,0 +1,15 @@
+.header-section__logo {
+    color: $bodyColor;
+    position: absolute;
+    left: 15px;
+    &:hover,
+    &:focus {
+        color: $brandColor;
+    }
+}
+
+@media(min-width: 768px) {
+    .header-section__logo {
+        position: static;
+    }
+}

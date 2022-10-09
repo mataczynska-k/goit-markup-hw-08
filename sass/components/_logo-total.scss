@@ -1,0 +1,15 @@
+.logo {
+    font-family: $logoFont;
+    font-size: 26px;
+    line-height: 1.19;
+    transition-property: color;
+    &--color {
+        color: $brandColor;
+    }
+}
+
+@media(min-width: 1200px) {
+    .logo {
+        margin-right: 93px;
+    }
+}

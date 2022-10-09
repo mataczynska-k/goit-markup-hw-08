@@ -1,0 +1,56 @@
+.footer {
+    background-color: $sectionColor;
+    &-section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        margin-left: auto;
+    }
+}
+
+.footer-contact {
+    text-align: center;
+    &__list {
+        display: block;
+        padding-top: 20px;
+    }
+    &__item {
+        font-style: normal;
+        font-size: $detailFont;
+        line-height: 1.71;
+        &--light {
+            color: $brightColor;
+        }
+    }
+}
+
+.footer-contact__link {
+    color: $linkFooterColor;
+    &:hover,
+    &:focus {
+        color: $brandColor;
+    }
+    &:visited {
+        color: $linkFooterColor;
+    }
+}
+
+@media(min-width: 768px) {
+    .footer-contact {
+        width: 50%;
+    }
+    .footer-section {
+        flex-wrap: wrap;
+        display: flex;
+    }
+}
+
+@media(min-width: 1200px) {
+    .footer-contact {
+        text-align: left;
+        width: 30%;
+        padding-left: 1em;
+    }
+    .footer-section {
+        flex-wrap: nowrap;
+    }
+}

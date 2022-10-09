@@ -1,0 +1,49 @@
+.team {
+    background-color: $backgroundContents;
+    &__item {
+        margin: 0 0 1.875em;
+        width: 100%;
+        background-color: $brightColor;
+        border-bottom-right-radius: $buttonBorderRadius;
+        border-bottom-left-radius: $buttonBorderRadius;
+        box-shadow: 0px 2px rgba(0, 0, 0, 0.2), 0px 1px rgba(0, 0, 0, 0.14), 0px 1px rgba(0, 0, 0, 0.12)
+    }
+    &__picture {
+        margin: 0;
+    }
+    &__img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    &__text {
+        font-size: $subjectFont;
+        line-height: 1.17;
+        text-align: center;
+    }
+    &__name {
+        color: $bodyColor;
+        font-weight: 500;
+        padding-top: 30px;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+    &__duty {
+        color: $detailColor;
+        font-size: $subjectFont;
+        margin-top: 0;
+    }
+}
+
+@media(min-width: 768px) {
+    .team__item {
+        width: 49%;
+    }
+}
+
+@media(min-width: 1200px) {
+    .team__item {
+        width: 270px;
+        margin: 0;
+    }
+}

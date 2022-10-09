@@ -1,0 +1,12 @@
+.social-icon {
+    width: 20px;
+    height: 20px;
+
+        &--team {
+            fill: $iconsColor;
+            transition-property: fill;
+        }
+        &--footer {
+            fill: $brightColor;
+        }
+}

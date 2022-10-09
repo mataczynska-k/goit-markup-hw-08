@@ -1,0 +1,23 @@
+.clients__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 92px;
+    border: 1px solid $iconsColor;
+    border-radius: $buttonBorderRadius;
+    fill: $iconsColor;
+    transition-property: fill, border;
+    &:hover,
+    &:focus {
+        fill: $brandColor;
+        border: 1px solid $brandColor;
+        cursor: pointer;
+    }
+}
+
+@media(min-width: 1200px) {
+    .clients__link {
+        width: 170px
+    }
+}

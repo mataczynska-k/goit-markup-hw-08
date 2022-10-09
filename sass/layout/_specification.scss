@@ -1,0 +1,53 @@
+.specification {
+    &__list {
+        justify-content: center;
+        align-items: center;
+    }
+    &__item {
+    }
+    &__product {
+        height: 120px;
+        background-color: $backgroundContents;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__icon {
+        width: 70px;
+        height: 70px;
+    }
+    &__title {
+        font-size: $detailColor;
+        line-height: 1.14;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+    &__text {
+        color: $detailColor;
+        font-size: $detailFont;
+        line-height: 1.71;
+        margin: 0 0 2em;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .specification {
+        &__list {
+            flex-flow: wrap;
+            gap: 30px;
+        }
+        &__item,
+        &__product {
+            flex-basis: calc((100% - 30px) / 2);
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .section__list {
+        flex-flow: nowrap;
+    }
+    .specification__text {
+        margin: 0;
+    }
+}

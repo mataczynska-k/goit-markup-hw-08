@@ -1,0 +1,32 @@
+.footer-join {
+    width: 206px;
+    height: 80px;
+    text-align: center;
+    margin: 2em auto 0;
+    &__list {
+        align-items: center;
+        width: 200px;
+        margin: 0 auto;
+    }
+    &__link {
+        background-color: $linkFooterColor-bg;
+        transition-property: background-color;
+    }
+}
+
+@media(min-width: 768px) {
+    .footer-join {
+        width: 50%;
+    }
+}
+
+@media(min-width: 1200px) {
+    .footer-join {
+        width: 20%;
+        text-align: left;
+        margin: 2em 0;
+        &__list {
+            margin: 0;
+        }
+    }
+}

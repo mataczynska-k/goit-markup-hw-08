@@ -1,0 +1,23 @@
+.filter {
+    display: flex;
+    padding-top: 3.75em;
+    padding-bottom: 2.5em;
+    padding-left: 0.9375em;
+    flex-wrap: wrap;
+    justify-content: start;
+    row-gap: 0.5em;
+}
+
+@media(min-width: 768px) {
+    .filter {
+        justify-content: center;     
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media(min-width: 1200px) {
+    .filter {
+        padding-top: 5.875em;
+        padding-bottom: 2.125em;
+    }
+}

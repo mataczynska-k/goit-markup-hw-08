@@ -1,0 +1,15 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $bodyFont;
+    color: $bodyColor;
+    margin: 0;
+}
+
+.link {
+    text-decoration: none;
+}

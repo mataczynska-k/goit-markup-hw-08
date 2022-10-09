@@ -1,0 +1,12 @@
+.footer-contact__logo {
+    color: $brightColor;
+
+        &:hover,
+        &:focus {
+            color: $brandColor;
+        }
+
+        &--light {
+            color: $brightColor;
+        }
+}
